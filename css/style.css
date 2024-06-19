@@ -1,0 +1,250 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root {
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo {
+    margin: 10px 33px;
+    display: inline-block;
+    width: 85px;
+    height: 85px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+#logo img {
+    width: 87px;
+    margin: 1px 0px;
+}
+
+/* Navigation Bar: List Styling */
+#navbar ul {
+    display: flex;
+    font-family: 'Roboto Slab', serif;
+}
+
+#navbar::before {
+    content: "";
+    background-color: #2f32f457;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    top: 0px;
+    left: 0px;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 2px 40px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: #0004ff;
+    background-color: white;
+
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 514px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url('../img/bg1.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 86%;
+    z-index: -1;
+    opacity: 0.9;
+    top: 0px;
+    left: 0px;
+}
+
+#home h1 {
+    font-family: 'Bree Serif', serif;
+    color: white;
+    text-align: center;
+}
+
+#home p {
+    font-family: 'Bree Serif', serif;
+    color: white;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+/* Services Section */
+#services {
+    margin: 2px;
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid #4f84e9;
+    padding: 22px;
+    margin: 3px 6px;
+    border-radius: 23px;
+    background: #e8eef0;
+}
+
+#services .box img {
+    height: 160px;
+    display: block;
+    margin: auto;
+}
+
+#services .box p {
+    font-family: 'Bree Serif', serif;
+}
+
+
+/* Clients */
+#client-section {
+    position: relative;
+    z-index: -2;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url("../img/bg.jpg");
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    margin: 14px 0px;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img {
+    height: 100px;
+}
+
+.client-item {
+    padding: 34px;
+}
+
+/* Contact Section */
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../img/contact.jpg') no-repeat center center/cover;
+    margin-top: 16px;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+
+footer {
+    background: black;
+    color: white;
+    padding: 3px 10px;
+}
+
+/* Utility Classes */
+.h-primary {
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    padding: 22px;
+}
+
+.h-secondary {
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 2px;
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    background: url('../img/bg1.jpg') no-repeat center center;
+    background-size: 0px;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: url('../img/bg1.jpg') repeat center center;
+    background-size: 60rem;
+    transition-duration: 60s;
+    ;
+    transition-timing-function: ease-in-out;
+    background-position: 300% 300%;
+}
+
+.center {
+    text-align: center;
+}
